@@ -2,17 +2,130 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  h2 {
+    background-color: #f0f0f0;
     color: #333;
   }
   
-  div {
-    background: #fff;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
   }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e7ffe7;
+    border: 1px solid #ccc;
+  }
+  
+  article h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  article p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  /* General styles for the form */
+form.new-post-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for form labels */
+  form.new-post-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Style for input fields */
+  form.new-post-form input[type="text"],
+  form.new-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Style for the textarea */
+  form.new-post-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  /* Style for the submit button */
+  form.new-post-form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  form.new-post-form but
   

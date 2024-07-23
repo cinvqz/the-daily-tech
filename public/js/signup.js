@@ -4,7 +4,7 @@ const signupFormHandler = async (event) => {
   const username = document.querySelector('#username-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-  if (username && password && password.length >= 8) {
+  if (username && password) {
     const response = await fetch('/api/users/signup', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
@@ -17,7 +17,7 @@ const signupFormHandler = async (event) => {
       alert('Failed to sign up.');
     }
   } else {
-    alert('Password must be at least 8 characters long.');
+    alert('Please enter a username and password.');
   }
 };
 
