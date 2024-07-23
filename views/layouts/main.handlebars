@@ -7,6 +7,31 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        {{#if logged_in}}
+          <li><a href="#" id="logout">Logout</a></li>
+        {{else}}
+          <li><a href="/login">Login</a></li>
+        {{/if}}
+      </ul>
+    </nav>
+    <h1>The Daily Tech Blog</h1>
+  </header>
   {{{body}}}
+  {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+  {{/if}}
+  {{#unless logged_in}}
+    {{#ifEquals page "login"}}
+      <script src="/js/login.js"></script>
+    {{/ifEquals}}
+    {{#ifEquals page "signup"}}
+      <script src="/js/signup.js"></script>
+    {{/ifEquals}}
+  {{/unless}}
 </body>
 </html>

@@ -16,6 +16,8 @@ const loginFormHandler = async (event) => {
       } else {
         alert('Failed to log in.');
       }
+    } else {
+      alert('Please enter your username and password.');
     }
   };
   
