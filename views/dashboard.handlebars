@@ -1,0 +1,10 @@
+<h2>Your Dashboard</h2>
+
+{{#each posts}}
+  <div>
+    <h3>{{this.title}}</h3>
+    <p>{{this.content}}</p>
+  </div>
+{{/each}}
+
+<a href="/logout">Logout</a>
