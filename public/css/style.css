@@ -127,5 +127,7 @@ form.new-post-form {
     font-size: 1em;
   }
   
-  form.new-post-form but
+  form.new-post-form button[type="submit"]:hover {
+    background-color: #218838;
+  }
   
